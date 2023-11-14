@@ -1,4 +1,7 @@
 # Funkcija za čitanje i obradu podataka iz datoteke
+import os
+
+
 def read_instance_file(file_path):
     with open(file_path, 'r') as file:
         # Čitanje prvog reda datoteke
@@ -21,7 +24,9 @@ def read_instance_file(file_path):
 
 
 # Primer korišćenja funkcije
-file_path = 'C:/Users/Tanja/Desktop/AStarSearchForLCS/instances/10_100_4_0.txt'
+main_path = os.path.dirname(__file__)
+file_path = os.path.join(main_path, 'instances\\10_100_4_0.txt')
+
 num_instances, alphabet_size, num_constrained_strings, instances, constrained_strings = read_instance_file(file_path)
 
 # Prikaz dobijenih podataka
