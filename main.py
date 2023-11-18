@@ -40,3 +40,5 @@ for length, instance in instances:
 print("\nConstrained stringovi:")
 for length, constrained_string in constrained_strings:
     print(f"Duzina: {length}, Constrained string: {constrained_string}")
+
+
